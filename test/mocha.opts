@@ -1,8 +1,7 @@
 --colors
 --reporter spec
---timeout 4000
---ignore-leaks
---growl
---debug
---compilers coffee:coffee-script
---globals io
+--timeout 8000
+--check-leaks
+--require @babel/register
+--require ./test/helpers/globals.helper
+--exit
